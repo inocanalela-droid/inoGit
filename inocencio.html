@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario de Contacto Profissional</title>
+</head>
+<style>
+	/* Estilos básicos para deixar o visual moderno*/
+	body{
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		/*background-color: lab(95.41% -5.5 0.8);*/
+		/* Utilizando duas cores a 90 graus*/
+		background-image: linear-gradient(50deg, white, rgb(185, 224, 241));
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+	}
+	.container{
+		background-color: white;
+		padding: 30px;
+		border-radius: 8px;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.container:hover{
+		 transform: translateY(-5px);  /*Efeito de flutuar ao passar o mouse */
+	}
+
+	h1{
+		text-align: center;
+		background-color: #6264fc;
+		border-radius: 14px;
+	}
+	h2{
+		margin-top: 0;
+		color: #333;
+		text-align: center;
+	}
+	.form-goup{
+		margin-bottom: 10px;
+	}
+	label{
+		display: block;
+		margin-bottom: 15px;
+		color: #080808;
+	}
+	input[type="text"],
+	input[type="email"],
+	select,
+	textarea{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid green;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+	textarea{
+		resize: orisontal;
+		min-height: 40px;
+	}
+	button{
+		width: 100%;
+		background-color: #28a745;
+		color: white;
+		padding: 12px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3 ease;
+	}
+	button:hover {
+		background-color: #218838;
+	}
+	.footer-info{
+		font-family: fantasy;
+		font-size: 14px;
+		text-align: center;
+		color: black;
+		margin-top: 15px;
+	}
+
+</style>
+<body>
+	<div class="container">
+	<h1>Formulário</h1>
+	<form>
+	<h2>Preencha os espaços a baixo!</h2>
+
+	<div class="form-goup">
+	<label for="nome">Nome Completo</label>
+	<input type="text", id="nome" placeholder="Nome" required>
+	</div>
+
+	<div class="form-goup">
+	<label for="email">E-mail</label>
+	<input type="email", id="email" placeholder="Ex: inocanalela@gmail.com" required>
+	</div>
+
+	<div class="form-goup">
+	<label for="pass">Palavra-passe</label>
+	<input type="password", id="pass" placeholder="Palavra-passe" required>
+	</div>
+	
+ <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                    <option>Orçamento</option>
+                    <option>Suporte</option>
+                    <option>Parceria</option>
+					<option>Supervisor----2000.00</option>
+                </select>
+            </div>
+			<!--<div class="form-goup">
+	<p>Género</p>
+	 <label for="q">Masculino</label>
+        <input type="radio", id="q">
+        <label for="r">Femenino</label>
+        <input type="radio" name="r" id="r" required>
+	</div>
+		-->
+	<div class="form-goup">
+		<label for="mensagem">Mensagem</label>
+		<textarea name="mensagem" id="mensagem" name="mensagem"></textarea>
+	</div>
+
+	
+	<button>Enviar</button> 
+   
+</form>
+<div class="footer-info">
+	© 2026 - Formulário Profissional
+</div>
+</div>
+
+</body>
+</html>
